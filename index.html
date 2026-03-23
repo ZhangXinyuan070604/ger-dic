@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>德语词典网站</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>德语词典网站</h1>
+    <p>这是一个德语单词查询小工具，用于展示常见德语单词的中文释义和基本变形。</p>
+
+    <hr />
+
+    <!-- 搜索区域 -->
+    <div class="search-area">
+      <label for="word-input">请输入德语单词：</label>
+      <input id="word-input" type="text" placeholder="例如：sein, Haus, gut..." />
+      <button id="search-btn">查询</button>
+    </div>
+
+    <!-- 模糊提示列表区域 -->
+    <div id="suggestions"></div>
+
+    <!-- 结果显示区域 -->
+    <div id="result">
+      这里将显示查询结果。
+    </div>
+
+        <!-- 投稿按钮和投稿列表 -->
+    <hr />
+    <div class="contribute-section">
+      <button id="contribute-btn">投稿一个新单词</button>
+      <button id="clear-contributions-btn">清除所有投稿</button>
+      <button id="export-contributions-btn">导出投稿</button>
+
+      <p>
+        投稿只需要输入德语单词和中文释义，系统会在本机记录在下面的列表中，方便站长后期统一添加进词典。
+      </p>
+
+      <div id="contribute-list">
+        当前还没有本地投稿。
+      </div>
+
+      <!-- 导出结果文本框 -->
+      <div>
+        <p>
+          导出结果（可复制）：每一行是“德语单词 - 中文释义”。仅根据本机投稿生成。
+        </p>
+        <textarea
+          id="export-contributions-output"
+          readonly
+        ></textarea>
+      </div>
+    </div>
+
+  <!-- 外部脚本：主逻辑 + 投稿逻辑 -->
+  <script src="main.js"></script>
+  <script src="contribute.js"></script>
+</body>
+</html>

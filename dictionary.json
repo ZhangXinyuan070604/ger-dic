@@ -1,0 +1,58 @@
+{
+  "sein": {
+    "pos": "verb",
+    "translation_zh": "是",
+    "forms": {
+      "infinitive": "sein",
+      "present": {
+        "ich": "bin",
+        "du": "bist",
+        "er/sie/es": "ist",
+        "wir": "sind",
+        "ihr": "seid",
+        "sie/Sie": "sind"
+      },
+      "preterite": {
+        "ich": "war",
+        "du": "warst",
+        "er/sie/es": "war",
+        "wir": "waren",
+        "ihr": "wart",
+        "sie/Sie": "waren"
+      },
+      "partizip_ii": "gewesen"
+    }
+  },
+  "Haus": {
+    "pos": "noun",
+    "translation_zh": "房子，房屋",
+    "gender": "das",
+    "forms": {
+      "singular": "das Haus",
+      "plural": "die Häuser",
+      "cases": {
+        "singular": {
+          "nominative": "das Haus",
+          "genitive": "des Hauses",
+          "dative": "dem Haus",
+          "accusative": "das Haus"
+        },
+        "plural": {
+          "nominative": "die Häuser",
+          "genitive": "der Häuser",
+          "dative": "den Häusern",
+          "accusative": "die Häuser"
+        }
+      }
+    }
+  },
+  "gut": {
+    "pos": "adjective",
+    "translation_zh": "好，良好",
+    "forms": {
+      "positive": "gut",
+      "comparative": "besser",
+      "superlative": "am besten"
+    }
+  }
+}
